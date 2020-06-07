@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
   SafeAreaView,
   Image,
-  Linking
+  Linking,
 } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import api from '../../services/api';
@@ -22,12 +22,13 @@ interface Params {
 interface Data {
   point: {
     image: string;
+    image_url: string;
     name: string;
     email: string;
     whatsapp: string;
     city: string;
     uf: string;
-  }
+  };
   items: {
     title: string;
   }[];
@@ -52,7 +53,9 @@ const Detail = () => {
   }
 
   function handleWhatsapp() {
-    Linking.openURL(`whatsapp://send?phone${data.point.whatsapp}&text=Tenho interesse sobre coleta de resíduos`);
+    Linking.openURL(
+      `whatsapp://send?phone${data.point.whatsapp}&text=Tenho interesse sobre coleta de resíduos`
+    );
   }
 
   function handleComposeMail() {
@@ -62,7 +65,7 @@ const Detail = () => {
     });
   }
 
-  if(!data.point) {
+  if (!data.point) {
     return null;
   }
 
@@ -73,7 +76,7 @@ const Detail = () => {
           <Icon name="arrow-left" size={20} color="#34cb79" />
         </TouchableOpacity>
 
-        <Image style={styles.pointImage} source={{ uri: data.point.image }} />
+        <Image style={styles.pointImage} source={{ uri: data.point.image_url }} />
         <Text style={styles.pointName}>{data.point.name}</Text>
         <Text style={styles.pointItems}>
           {data.items.map((item) => item.title).join(', ')}
