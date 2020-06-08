@@ -42,18 +42,20 @@ O visual do projeto tem como base o template fornecido pela Rocketseat: https://
 
 # Tecnologias utilizadas
 
-- React.js
-- Dropzone
-- Leaflet
-- React Icons
-- TypeScript
-- Node.js
+- API IBGE
+- Axios
+- CORS
+- Expo
 - Express
+- KnexJS
+- Leaflet
 - Multer
-- Cors
+- NodeJS
+- React Native
+- ReactJS
+- SQLite
+- ts-node
 - TypeScript
-- Knex.js
-- Insomnia
   
 ---
 
