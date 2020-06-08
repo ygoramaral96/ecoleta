@@ -28,10 +28,13 @@ Logo depois ele é direcionado a uma página com um mapa contendo os pontos de c
 
 O visual do projeto tem como base o template fornecido pela Rocketseat: https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta
 
+
+<h2 align="center"> Aplicação Web </h2>
 <p align="center">
-    <h3 align="center"> Aplicação Web </h3>
-    <img src="web.png" />
-    <h3 align="center"> Aplicação Mobile </h3>
+    <img src="web.jpg" />
+</p>
+<h2 align="center"> Aplicação Mobile </h2>
+<p align="center">
     <img src="mobile.jpeg" />
 </p>
 
@@ -119,7 +122,7 @@ O visual do projeto tem como base o template fornecido pela Rocketseat: https://
 ```bash
 
     # Entrar no diretório da aplicação mobile
-    $ cd mopbile
+    $ cd mobile
 
     # Instalar as dependências
     $ npm install
