@@ -32,8 +32,6 @@
 ---
 
 # Sobre
-Projeto da Next Level Week #1 realizada pela [Rockeseat](https://rocketseat.com.br/).
-
 Ecoleta é um marketplace de coleta de resíduos. 
 
 Através da interface web é possível realizar o cadastro de pontos de coleta, possuindo um dropzone para upload de imagens e um mapa para cadastrar a geolocalização do ponto de coleta.
